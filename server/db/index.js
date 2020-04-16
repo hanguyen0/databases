@@ -18,4 +18,11 @@ connection.connect(function(err, rows, fields) {
   console.log('connected');
 });
 
-// connection.end()
+// connection.query(queryString, queryArgs, function(err, results) {
+//   // console.log("INSIDE CONECTION uery")
+//   done();
+// });
+
+connection.end();
+
+module.exports = {connectionAsync: connection};
