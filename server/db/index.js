@@ -11,18 +11,13 @@ let connection = mysql.createConnection({
 });
 
 
-connection.connect(function(err, rows, fields) {
-  if (err) {
-    return console.error('error: ' + err.message);
-  }
-  console.log('connected');
-});
+connection.connect();
 
 // connection.query(queryString, queryArgs, function(err, results) {
 //   // console.log("INSIDE CONECTION uery")
 //   done();
 // });
 
-connection.end();
+// connection.end();
 
-module.exports = {connectionAsync: connection};
+module.exports = connection;
