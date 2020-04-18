@@ -13,7 +13,7 @@ module.exports = {
           console.log(err);
         } else {
           // console.log(data, 'great success');
-          cb(data);
+          cb(null, data);
         }
       });
     }, // a function which produces all the messages
@@ -25,7 +25,7 @@ module.exports = {
         } else {
           // console.log(params);
           // console.log(data);
-          cb(data);
+          cb(null, data);
         }
       });
     } // a function which can be used to insert a message into the database
@@ -39,7 +39,7 @@ module.exports = {
         if (err) {
           console.log(err);
         } else {
-          cb(data);
+          cb(null, data);
         }
       });
     },
@@ -49,7 +49,7 @@ module.exports = {
         if (err) {
           console.log(err);
         } else {
-          cb(data);
+          cb(null, data);
         }
       });
     }

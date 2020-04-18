@@ -1,9 +1,12 @@
-drop database chat;
+drop database if exists chat;
 CREATE DATABASE chat;
 
 USE chat;
 
-/* Create other tables and define schemas for them here! */
+/* Create other tables and define schemas for them here! 
+mysql -u root < path/to/schema.sql
+mysql -u student -p
+*/
 CREATE TABLE users (
   /* Describe your table here.*/
   id INT NOT NULL AUTO_INCREMENT,

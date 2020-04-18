@@ -21,6 +21,7 @@ module.exports = {
     // Ditto as above
     get: function (req, res) {
       models.users.get((err, results) => {
+        console.log(results);
         res.json(results);
       });
     },
